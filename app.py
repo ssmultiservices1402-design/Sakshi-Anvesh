@@ -54,7 +54,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # --- CHAT INPUT & LOGIC ---
-if prompt = st.chat_input("Type your message here..."):
+if prompt := st.chat_input("Type your message here..."):
     # 1. Display User Message
     with st.chat_message("user"):
         st.markdown(prompt)
